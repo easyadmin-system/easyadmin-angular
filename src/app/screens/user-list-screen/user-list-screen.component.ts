@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { APIService } from '@services/api.service';
 import { IUser } from '@interfaces/user.interface';
 
@@ -7,7 +7,7 @@ import { IUser } from '@interfaces/user.interface';
   templateUrl: './user-list-screen.component.html',
   styleUrls: ['./user-list-screen.component.scss']
 })
-export class UserListScreenComponent {
+export class UserListScreenComponent implements OnInit {
   displayedColumns: string[] = ['username', 'firstName', 'lastName', 'id'];
   tableData: IUser[] = [];
 

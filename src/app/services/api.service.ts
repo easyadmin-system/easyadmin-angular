@@ -36,8 +36,8 @@ export class APIService {
       );
   }
 
-  createUser(elm: IUser) {
-    return this.http.post<IUser>(`${this.apiUrl}/users/`, elm)
+  createUser(elm: any) {
+    return this.http.post<any>(`${this.apiUrl}/users/`, elm)
       .pipe(
         catchError(this.handleError)
       );
