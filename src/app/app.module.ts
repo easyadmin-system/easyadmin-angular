@@ -7,7 +7,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatTableModule } from '@angular/material/table';
 
 import { DashboardScreenComponent } from '@screens/dashboard-screen/dashboard-screen.component';
 import { LoginScreenComponent } from '@screens/login-screen/login-screen.component';
@@ -36,7 +38,9 @@ import { UserProfileScreenComponent } from '@screens/user-profile-screen/user-pr
     BrowserAnimationsModule,
     HttpClientModule,
     MatButtonModule,
+    MatIconModule,
     MatMenuModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
