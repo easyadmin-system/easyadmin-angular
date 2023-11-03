@@ -23,9 +23,9 @@
     "doc": "doc"
   },
   "scripts": {
-    "dev": "ng serve",
+    "dev": "FAKE_BACKEND=true ng serve --host 0.0.0.0 --disable-host-check --port 8080",
     "ng": "ng",
-    "start": "ng serve",
+    "start": "http-server ./dist/ --port 8080 -a 0.0.0.0",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
