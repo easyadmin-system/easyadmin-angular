@@ -17,7 +17,8 @@ export const snackBarConfig: MatSnackBarConfig = {
   providedIn: 'root'
 })
 export class UserService {
-  apiUrl = environment.apiServerUrl;
+  // apiUrl = environment.apiServerUrl;
+  apiUrl = '/api';
 
   constructor(
     private httpClient: HttpClient,
